@@ -1,36 +1,143 @@
-/* * {
-  margin: 0px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-main {
-  width: 80vw;
+:root {
+  /* --related-article-bg: hsl(97, 31%, 90%); */
+  /* --bg: hsl(97, 31%, 95%); */
+  /* --deep-green: hsl(96, 100%, 10%); */
+  /* --green: hsl(96, 60%, 30%); */
+  --blue: rgb(220, 239, 246);
+  --text-green: hsl(96, 100%, 10%);
+  --text-white: hsl(0, 0%, 100%);
+  --deep-green: black;
+  --related-article-bg: hsl(0, 0%, 98%);
+}
+
+body {
+  width: 100vw;
   height: 100vh;
-  margin: 0 auto;
-  background-color: aliceblue;
+  color: var(--deep-green);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--bg);
 }
 
-nav {
-  display: flex;
-  gap: 5em;
-  border: 1px solid black;
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav a {
+  color: var(--text-white);
+}
+
+hgroup::before {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-image:
+    url(https://img.freepik.com/free-photo/earth-day-environment-eco-concept-space-text_185193-108901.jpg?semt=ais_user_personalization&w=740&q=80);
+  background-size: contain;
+  z-index: -1;
 }
 
 hgroup {
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  font-size: 40px;
   align-items: center;
+  color: var(--text-white);
+  flex-direction: column;
   justify-content: center;
-  border: 1px solid black;
 }
 
-address {
+main {
+  gap: 3em;
+  width: 90%;
+  display: flex;
+  margin: 20px auto;
+  flex-wrap: column wrap;
+}
 
+nav {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  background-color: var(--deep-green);
+  justify-content: space-around;
+}
+
+mark {
+  background-color: #e8e8e8;
+  color: var(--deep-green);
+}
+
+dialog {
+  left: 77%;
+  bottom: 5%;
+  padding: 1.2em;
+  position: fixed;
+  border-radius: 8px;
+}
+
+dialog form button {
+  top: 2px;
+  right: 2px;
+  width: 2em;
+  border: none;
+  padding: 0.2em;
+  cursor: pointer;
+  font-size: 10px;
+  position: absolute;
+  background-color: transparent;
+}
+
+section {
+  padding: 1.5em 0em;
+  font-size: 1.1em;
+  line-height: 2em;
+}
+
+section:nth-child(5) {
+  background-color: var(--related-article-bg);
+  padding: 2em;
+  border-radius: 2em;
+}
+
+article {
+  padding: 1em 0em;
+  width: 80%;
+}
+
+article header h2 {
+  font-size: 3.5em;
+}
+
+aside {
+  padding: 1em;
+  width: 20%;
+  background-color: var(--related-article-bg);
+}
+
+aside p {
+  margin-top: 20px;
+}
+
+aside a {
+  color: var(--text-green);
 }
 
 footer {
-  background-color: azure;
+  gap: 1em;
+  padding: 25px;
   display: flex;
-  justify-content: space-around;
-} */
+  justify-content: center;
+  color: var(--text-white);
+  background-color: var(--deep-green);
+}
