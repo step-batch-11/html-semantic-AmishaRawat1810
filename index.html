@@ -7,16 +7,17 @@
 </head>
 
 <body>
+
   <header>
-    <h1>The Future of Urban Farming</h1>
-    <p>Growing Food in the Concrete Jungle</p>
+    <hgroup>
+      <h1>The Future of Urban Farming</h1>
+      <p>Growing Food in the Concrete Jungle</p>
+    </hgroup>
     <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/articles">Articles</a></li>
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
+      <a href="/">Home</a>
+      <a href="#">Articles</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
     </nav>
   </header>
 
@@ -25,17 +26,21 @@
     <article>
       <header>
         <h2>Rooftop Gardens Are Changing Cities</h2>
-        <p>By Maria Lopez</p>
-        <time datetime="2026-03-15">March 15, 2026</time>
+        <p>By Maria Lopez |
+          Published on: <time datetime="2026-03-15">March 15, 2026</time></p>
       </header>
-      <p>Urban farming is transforming unused city spaces into productive green zones. Rooftop gardens are leading
-        this change.</p>
+
+      <section>
+        <h3>Introduction</h3>
+        <p>Urban farming is transforming unused city spaces into productive green zones. Rooftop gardens are leading
+          this change.</p>
+      </section>
 
       <section>
         <h3>Why Rooftop Gardens Matter</h3>
         <p>Cities face food insecurity and environmental stress. Rooftop gardens reduce heat and improve air quality.
-          <mark>Urban farms can reduce city temperatures by 2°C.</mark> <data value="500">Average yield per rooftop: 500
-            kg per year</data>
+          <mark>Urban farms can reduce city temperatures by 2°C.</mark> Average yield per rooftop: <data
+            value="500 kg per year">500 kg per year</data>
         </p>
       </section>
 
@@ -43,7 +48,9 @@
         <h3>Real-World Example</h3>
         <p>In 2024, the SkyGrow Project launched in New York City.</p>
         <figure>
-          <img src="/" alt="Photo of a rooftop garden in NYC">
+          <img
+            src="https://png.pngtree.com/background/20250206/original/pngtree-a-garden-rooftop-filled-with-plants-and-flowers-showing-urban-efforts-picture-image_16251735.jpg"
+            width="400px" alt="Photo of a rooftop garden in NYC">
           <figcaption>
             Volunteers planting vegetables at SkyGrow Project.
           </figcaption>
@@ -62,28 +69,31 @@
         <h3>Conclusion</h3>
         <p>Rooftop farming is more than a trend; it is a sustainable movement.</p>
       </section>
-    </article>
 
-    <aside>
-      <h3>Related Article:</h3>
-      <p><a href="/">Community Gardens in Schools</a></p>
-    </aside>
+      <aside>
+        <h3>Related Article:</h3>
+        <p><a href="#">Community Gardens in Schools</a></p>
+      </aside>
+    </article>
 
   </main>
 
   <footer>
-    <p>© 2026 Urban Green Initiative</p>
-    <p>Last updated: April 1, 2026</p>
     <address>
       Urban Green Initiative <br>
       123 Greenway Blvd <br>
       New York, NY <br>
       Email: <a href="mailto:info@urbangreen.org">info@urbangreen.org</a>
     </address>
+    <p>&copy; 2026 Urban Green Initiative</p>
+    <p>Last updated: April 1, 2026</p>
   </footer>
 
   <dialog id="newsletter" open>
-    <p>Subscribe to our newsletter for updates!</p>
+    <form method="dialog">
+      <p>Subscribe to our newsletter for updates!</p>
+      <button>close</button>
+    </form>
   </dialog>
 
 </body>
